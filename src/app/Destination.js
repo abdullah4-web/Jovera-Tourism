@@ -5,7 +5,7 @@ import california from '../Assets/homePageAssets/california.png';
 import loasangles from '../Assets/homePageAssets/loasangles.png';
 import naveda from '../Assets/homePageAssets/naveda.png';
 import sanAmerica from '../Assets/homePageAssets/sanAmerica.png';
-import fujairah from '../Assets/homePageAssets/fujarisah.png';
+import fujarisah from '../Assets/homePageAssets/fujarisah.png';
 import rasalkhaima from '../Assets/homePageAssets/rasalkhaima.png'
 import ummalkhaim from '../Assets/homePageAssets/ummalkhaim.png';
 import './homePageStyle.css';
@@ -35,7 +35,7 @@ const destinations = [
     {
         title: "Fujairah",
         text: "30 Hotels",
-        image: fujairah
+        image: fujarisah
     },
     {
         title: "Ras Al khaimah",

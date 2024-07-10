@@ -61,7 +61,7 @@ function HomePageNav() {
                         </NavDropdown>
 
 
-                        <Nav.Link href="#action2" className='linkStyleNav'>Contact us</Nav.Link>
+                        <Nav.Link href="#action3" className='linkStyleNav'>Contact us</Nav.Link>
                     </Nav>
                     <NavDropdown title="EUR" id="linkStyleNavbar">
                         <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
