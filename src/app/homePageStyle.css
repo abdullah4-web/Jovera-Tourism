@@ -1,0 +1,633 @@
+.homePageContainer {
+    background-image: url('../Assets/homePageAssets/homePagebg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navContainer {
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(5.199999809265137px);
+}
+
+.linkStyleNav {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    margin-right: 15px;
+}
+
+.linkStyleNav:hover,
+.linkStyleNav:focus,
+.linkStyleNav:active {
+    color: #F6C427;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+#linkStyleNavbar {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    margin-right: 15px;
+}
+
+.navbarLogoright {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 15px;
+}
+
+.becomeHostbtn {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: #F6C427;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.journeybegin {
+    color: #FFF;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 74px;
+    text-transform: uppercase;
+    padding-top: 8%;
+}
+
+.adventure {
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px;
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+
+.bookingContainer {
+    display: flex;
+    max-width: 1140px;
+    height: auto;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    border-radius: 70px;
+    border: 1px solid #E1E1E1;
+    background: #FFF;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
+    margin: 0 auto;
+}
+
+
+.locationParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.locationtext {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.locationtextpra {
+    color: rgba(0, 0, 0, 0.35);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -5px;
+}
+
+.searchbtncontainer {
+    display: flex;
+    width: 146.2px;
+    height: 60px;
+    padding: 19.5px 34.64px 20.5px 35px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 70px;
+    background: #FCCF44;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+.searchbtncontainer:hover,
+.searchbtncontainer:focus,
+.searchbtncontainer:active,
+.searchbtncontainer:focus-visible {
+    background: #FCCF44;
+}
+
+.bookingImage {
+    width: 100%;
+    height: auto;
+}
+
+.newRowdestination {
+    margin-top: 20px;
+}
+
+.topdestination {
+    flex-shrink: 0;
+    color: #232323;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: center;
+}
+
+.titledestination {
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 43.2px;
+    text-decoration: none !important;
+}
+
+.destinationCard {
+    width: 100%;
+    height: 275px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.destinationCard:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.ul_text_class {
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.Recommended_bg {
+    background: #F0F0F0;
+    padding-bottom: 10px;
+}
+
+.recommndedtxt {
+    color: #1A2B48;
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    margin-top: 50px;
+    padding-top: 2%;
+}
+
+.caseloHotel {
+    color: #232323;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 5px;
+}
+
+.caseloCity {
+    color: #5E6D77;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.ratingContainer {
+    display: inline-flex;
+    height: 28px;
+    padding: 3px 6.611px 4px 7px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: -0.338px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #B8CCFF;
+    background: #F9FBFF;
+}
+
+.ratingTEXT {
+    color: #3B71FE;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.review {
+    color: #1A2B48;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.reviewNum {
+    color: #5E6D77;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.RatingMain {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.rateofhotel {
+    color: #5E6D77;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.storiesandtips {
+    color: #232323;
+    font-family: "DM Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.carousalImage {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.card-container {
+    padding: 10px;
+}
+
+.travellogo {
+    border-radius: 30px;
+    background: rgba(1, 115, 44, 0.06);
+    display: flex;
+    height: 30px;
+    padding: 5.5px 15px 6px 10px;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.storytext {
+    color: #232323;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+.storydes {
+    color: #727272;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.getspeciaslofferImage {
+    width: 100%;
+}
+
+.specialoffer {
+    color: #232323;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.subscribetext {
+    color: #727272;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.subscribebtn {
+    color: #000;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    display: flex;
+    width: 118.06px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 1px solid #DAE1E7;
+    background: #FCCF44;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.subscribecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.TravelerContainer {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+.footerContainer {
+    background: #F4F4F4;
+    margin-top: 2%;
+
+}
+
+.footerRow {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 20px;
+}
+
+.supportName {
+    color: #232323;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+
+.helpCnter {
+    color: #727272;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.coprightTraveler {
+    color: #727272;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 2%;
+}
+
+
+.getspecialofferImage {
+    width: 100%;
+    height: auto;
+}
+
+.TravelerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.specialoffer {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subscribetext {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.subscribecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.inputField {
+    flex: 1 1;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 100px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+}
+
+.card_image {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.journeybegin,
+.adventure {
+    animation: fadeIn 2s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .specialoffer {
+        font-size: 1.5rem;
+    }
+
+    .subscribetext {
+        font-size: 1rem;
+    }
+
+    .subscribecontainer {
+        flex-direction: column;
+    }
+
+    .inputField,
+    .subscribebtn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .journeybegin {
+        font-size: 24px;
+        padding-top: 1%;
+    }
+
+    .adventure {
+        padding-bottom: 5%;
+    }
+
+    .bookingContainer {
+        border-radius: 10px;
+    }
+
+    .searchbtncontainer {
+        width: 100%;
+        margin-top: 15px;
+        height: 40px;
+        padding: 10px
+    }
+
+    .locationParent {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid #cac8c6;
+        padding: 5px
+    }
+
+    .destinationCard {
+        margin-top: 10px;
+    }
+
+    .carousalImage {
+        width: 80%;
+    }
+
+    .getspeciaslofferImage {
+        display: none;
+    }
+
+    .subscribebtn {
+        width: 100%;
+    }
+
+    .inputField {
+        width: 100%;
+    }
+
+}
