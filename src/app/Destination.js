@@ -2,13 +2,14 @@ import React from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
 import Link from 'next/link';
 import './homePageStyle.css';
-import california from '../Assets/homePageAssets/california.JPG';
-import loasangles from '../Assets/homePageAssets/loasangles.JPG';
+import california from '../Assets/homePageAssets/california.png';
+import loasangles from '../Assets/homePageAssets/loasangles.png';
 import naveda from '../Assets/homePageAssets/naveda.png';
-import sanAmerica from '../Assets/homePageAssets/sanAmerica.JPG';
-import fujairah from '../Assets/homePageAssets/fujarisah.jpg';
-import rasalkhaima from '../Assets/homePageAssets/rasalkhaima.jpg'
-import ummalkhaim from '../Assets/homePageAssets/ummalkhaim.jpg';
+import sanAmerica from '../Assets/homePageAssets/sanAmerica.png';
+import fujairah from '../Assets/homePageAssets/fujarisah.png';
+import rasalkhaima from '../Assets/homePageAssets/rasalkhaima.png'
+import ummalkhaim from '../Assets/homePageAssets/ummalkhaim.png';
+import Zoom from 'react-reveal/Zoom';
 
 // Sample JSON data with image paths
 const destinations = [
@@ -57,6 +58,7 @@ const Destination = () => {
                 {destinations.map((destination, index) => (
                     <Col key={index} xs={12} sm={6} md={4} lg={3} className="mb-4">
                         <div className='card_Container'>
+                            <Zoom>
                                 <Link href={'/'} style={{ textDecoration: 'none' }}>
                                     <Card
                                         style={{
@@ -78,6 +80,7 @@ const Destination = () => {
                                         </Card.Body>
                                     </Card>
                                 </Link>
+                            </Zoom>
 
                         </div>
                     </Col>
