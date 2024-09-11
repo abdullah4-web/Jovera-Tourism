@@ -1,0 +1,62 @@
+.card_images {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    filter: brightness(0) invert(1);
+}
+
+.inspiration_card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card_images {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+    filter: brightness(0.9) invert(1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    color: black;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.inspiration_card:hover .card_images {
+    filter: none;
+    transform: scale(1.05);
+}
+
+.inspiration_card:hover .overlay {
+    opacity: 1;
+}
+
+.inspiration_card:hover .title,
+.inspiration_card:hover .subtitle {
+    color: white;
+    /* Optional: Maintain black color on hover if you want to ensure consistency */
+}
