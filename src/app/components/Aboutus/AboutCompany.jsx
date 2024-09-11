@@ -16,7 +16,7 @@ const AboutCompany = () => {
                     <div className='founded_text_container'>
                         <h5>Our Mission</h5>
                         <p className='founded_text'>
-                            At Jovera Tourism, our mission is to redefine travel through innovation, personalized service, and unwavering integrity. Since 2013, we've aimed to exceed client expectations with comprehensive, tailored travel solutions. Guided by our passion for exploration and deep industry knowledge, we forge lasting partnerships based on trust and satisfaction, setting new standards in the UAE&rsquo;s travel sector to inspire joyful and confident exploration worldwide.
+                            At Jovera Tourism, our mission is to redefine travel through innovation, personalized service, and unwavering integrity. Since 2013, we&rsquo;ve aimed to exceed client expectations with comprehensive, tailored travel solutions. Guided by our passion for exploration and deep industry knowledge, we forge lasting partnerships based on trust and satisfaction, setting new standards in the UAE&rsquo;s travel sector to inspire joyful and confident exploration worldwide.
                         </p>
                     </div>
                 </Col>
@@ -34,3 +34,5 @@ const AboutCompany = () => {
 };
 
 export default AboutCompany;
+
+
