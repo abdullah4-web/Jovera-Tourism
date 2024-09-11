@@ -1,10 +1,11 @@
-'use client'
-import React from 'react'
-import './BookingStyle.css'
-import { Container, Row, Col } from 'react-bootstrap'
-import bookingicon from '../../Assets/homepageassets/bookingicon.png'
-import Image from 'next/image'
-import travelagent from '../../Assets/homepageassets/travelagent.png'
+'use client';
+import React from 'react';
+import './BookingStyle.css';
+import { Container, Row, Col } from 'react-bootstrap';
+import bookingicon from '../../Assets/homepageassets/bookingicon.png';
+import Image from 'next/image';
+import travelagent from '../../Assets/homepageassets/travelagent.png';
+
 const BookingProcess = () => {
     const bookingProcess = [
         {
@@ -43,7 +44,8 @@ const BookingProcess = () => {
             title: 'Pesonalized Trips',
             des: 'Our local travel experts will design a trip that matches your unique interests and special requirements, booking everything.',
         },
-    ]
+    ];
+
     const travelAgentData = [
         {
             id: 0,
@@ -69,19 +71,20 @@ const BookingProcess = () => {
             name: 'Arlene McCoy',
             profession: 'Marketing'
         },
-    ]
+    ];
+
     return (
-        <div className='booking_main_container' >
+        <div className='booking_main_container'>
             <Container>
-                <p className='bookwithus' >why book with us</p>
-                <h1 className='booking_process' >Convenient and Easy Tour Booking Process</h1>
+                <p className='bookwithus'>why book with us</p>
+                <h1 className='booking_process'>Convenient and Easy Tour Booking Process</h1>
                 <Row>
-                    {bookingProcess.map((bookPlan, index) => (
-                        <Col xs={12} sm={6} md={6} lg={4} key={index}>
+                    {bookingProcess.map((bookPlan) => (
+                        <Col xs={12} sm={6} md={6} lg={4} key={bookPlan.id}>
                             <div className="booking-item">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }} className='mt-5'>
                                     <Image src={bookPlan.imageIcon} alt='image' fluid />
-                                    <p className='titlebookplan mb-0' >{bookPlan.title}</p>
+                                    <p className='titlebookplan mb-0'>{bookPlan.title}</p>
                                 </div>
                                 <p className='titlebookdes'>{bookPlan.des}</p>
                             </div>
@@ -91,29 +94,24 @@ const BookingProcess = () => {
 
                 {/* Travel Agent */}
 
-                <div className='booking_agent_container' >
-                    <p className='bookwithus' >Meet The Team</p>
-                    <h1 className='booking_process' >Our Best Travel Agents</h1>
+                <div className='booking_agent_container'>
+                    <p className='bookwithus'>Meet The Team</p>
+                    <h1 className='booking_process'>Our Best Travel Agents</h1>
                 </div>
                 <Row>
-                    {
-                        travelAgentData.map((agent, index) => {
-                            return (
-
-                                <Col xs={12} sm={12} md={6} lg={3} className='travel_agent_conatiner'>
-                                    <div>
-                                        <Image src={agent.travelagent} alt='travelagent' className='agent_image' />
-                                        <p className='agent_name' > {agent.name} </p>
-                                        <p className='agent_profession'> {agent.profession} </p>
-                                    </div>
-                                </Col>
-                            )
-                        })
-                    }
+                    {travelAgentData.map((agent) => (
+                        <Col xs={12} sm={12} md={6} lg={3} key={agent.id} className='travel_agent_conatiner'>
+                            <div>
+                                <Image src={agent.travelagent} alt='travelagent' className='agent_image' />
+                                <p className='agent_name'>{agent.name}</p>
+                                <p className='agent_profession'>{agent.profession}</p>
+                            </div>
+                        </Col>
+                    ))}
                 </Row>
             </Container>
         </div>
-    )
-}
+    );
+};
 
-export default BookingProcess
+export default BookingProcess;
