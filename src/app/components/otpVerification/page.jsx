@@ -5,7 +5,7 @@ import axios from 'axios';
 import Link from 'next/link';
 import Image from 'next/image';
 import '../login/authstyle.css';
-import forgotpassword from '../../Assets/homepageassets/forgotpassword.PNG';
+import forgotpassword from '../../Assets/homepageassets/forgotpassword.png';
 
 const Page = () => {
     const [otp, setOtp] = useState({ field1: '', field2: '', field3: '', field4: '' });
