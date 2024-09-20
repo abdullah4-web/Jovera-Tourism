@@ -1,0 +1,215 @@
+.flight_container {
+    background-image: url('../../Assets/homepageassets/flightbg.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.slider_package_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.pkge_subtitle{
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+.packages_btn,
+.packages_btn:hover,
+.packages_btn:visited,
+.packages_btn:focus,
+.packages_btn:focus-visible {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 12px;
+    background: #E4A70A;
+    border: none;
+}
+
+.popular_visa_text {
+    color: #000;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 8%;
+}
+
+.image_container {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending_deals {
+    color: #000;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.tranding_container {
+    display: flex;
+    border-radius: 12px;
+    background: #E4A70A;
+    gap: 5px;
+    width: 100%;
+    max-width: 350px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.All_packages_text {
+    color: #000;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 5%;
+}
+
+.slider_item {
+    padding: 0 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.card_class_travel_guide {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    height: 100% !important;
+    max-height: 500px !important;
+}
+
+.flight_details {
+    padding: 10px 10px;
+}
+
+.card_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image scales correctly without distortion */
+}
+
+.popular_visa_container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.popular_visa_text_inside {
+    color: #000;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 43px;
+    text-transform: uppercase;
+}
+
+.visa_card_conatiner {
+    padding: 50px 5px;
+    border-radius: 20px;
+    border: 2px solid #5C626A;
+    background: #FFF;
+    cursor: pointer;
+}
+
+.content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    flex-direction: column;
+}
+
+.about_link {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+    text-decoration: none;
+}
+
+
+.package-card {
+    position: relative;
+    border: none;
+    /* Optional: remove card border if not needed */
+    overflow: hidden;
+    border-radius: 0;
+    /* Optional: remove border radius if not needed */
+}
+
+.package-card-image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    /* Adjust height as needed */
+}
+
+.package-card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+    /* For better text readability */
+    z-index: 1;
+    /* Ensure text is above the background */
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+
+
+
+@media(max-width:768px) {
+    .popular_visa_text {
+        font-size: 30px;
+    }
+
+    .popular_visa_text {
+        margin-top: 5%;
+    }
+
+    .trending_deals {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:450px) {
+    .popular_visa_text {
+        font-size: 18px;
+    }
+
+    .popular_visa_text {
+        margin-top: 5%;
+    }
+
+    .trending_deals {
+        font-size: 22px;
+    }
+}

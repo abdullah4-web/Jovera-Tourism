@@ -1,0 +1,225 @@
+.extreme_tours_text {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.PerfectTravel {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.travel_image_container {
+    display: flex;
+
+}
+
+.travel_image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.happy_customers {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    text-decoration-line: underline;
+}
+
+.travel_places_col_one {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.travel_places_col_two {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.travel_places_col_three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel_text {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.number_text {
+    color: #E4A70A;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.years_text {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.travel_container_text_number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exploreNow_btn {
+    display: flex;
+    padding: 12px 21px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    background-color: white;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.map_image {
+    width: auto;
+    height: auto;
+}
+
+.perfectplace_container{
+    margin-top: 5%;
+}
+
+@media(max-width:1350px) and (min-width:768px) {
+    .map_image {
+        width: 100%;
+        height: auto;
+    }
+
+    .travel_places_col_three {
+        margin-top: 5%;
+    }
+}
+
+@media(max-width:768px) {
+    .map_image {
+        width: 100%;
+        height: auto;
+    }
+
+    .PerfectTravel {
+        font-size: 26px;
+    }
+
+    .extreme_tours_text {
+        text-align: center;
+    }
+
+    .number_text {
+        text-align: center;
+    }
+
+    .first_col_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .PerfectTravel {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .travel_image_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exploreNow_btn_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .travel_places_col_three {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:450px) {
+    .map_image {
+        width: 100%;
+        height: auto;
+    }
+
+    .PerfectTravel {
+        font-size: 20px;
+    }
+
+    .extreme_tours_text {
+        text-align: center;
+    }
+
+    .first_col_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .PerfectTravel {
+        text-align: center;
+    }
+
+    .travel_image_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .travel_container_text_number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .exploreNow_btn {
+        padding: 8px 15px;
+    }
+
+    .travel_places_col_three {
+        margin-top: 20px;
+    }
+
+    .exploreNow_btn_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

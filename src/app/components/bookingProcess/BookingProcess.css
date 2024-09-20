@@ -1,0 +1,116 @@
+.booking_process_text {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.bg_one_container {
+    background-image: url('../../Assets/homepageassets/bgone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.chooseexperience {
+    color: #000;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 8%;
+}
+
+
+.selection_tours {
+    width: 100%;
+    max-width: 415px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.wide_selection_text {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.wide_selection_text_p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.bg_conatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.bg_two_container {
+    background-image: url('../../Assets/homepageassets/bgtwo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.bg_two_container:hover {
+    transform: scale(1.02);
+    /* Slightly enlarge the container */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    /* Add a shadow effect */
+}
+
+.bg_three_container {
+    background-image: url('../../Assets/homepageassets//bgthree.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+
+@media(max-width:1000px) {
+    .bg_conatiner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0%;
+    }
+}
+
+@media(max-width:768px){
+    .wide_selection_text_p {
+        padding: 10px;
+    }
+}

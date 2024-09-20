@@ -1,0 +1,61 @@
+.blog_container {
+    background-image: url('../../Assets/homepageassets/flightbg.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    flex-direction: column;
+}
+
+.card_blog_details {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+}
+
+.package_image_details {
+    /* width: 100%; */
+    width: 50%;
+}
+
+.author_name {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 152.744%;
+    letter-spacing: 0.54px;
+}
+
+.blog_details_container {
+    display: flex;
+    gap: 10px;
+}
+
+.blog_details_content {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    text-align: justify;
+    font-size: 18px;
+
+}
+
+.blog_title_details {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+/* 
+/api/package/single-package/:id
+/api/package/update-package/:id
+/api/package/delete-package/:id */

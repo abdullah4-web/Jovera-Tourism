@@ -1,0 +1,186 @@
+.sidebar {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px; /* Add padding */
+    height: 100vh; /* Full height */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; /* Flex display */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.sidebar-buttons {
+    flex-grow: 1; /* Allow sidebar buttons to grow */
+    display: flex; /* Flex display for buttons */
+    flex-direction: column; /* Stack buttons vertically */
+}
+
+.All_btn_class {
+    margin: 5px 0; /* Vertical spacing between buttons */
+    width: 100%; /* Full width */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.All_btn_class:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.admin_container {
+    padding: 20px; /* Add padding */
+}
+
+.form_container {
+    background-color: #ffffff; /* White background for forms */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for the form container */
+}
+
+
+.create_package {
+    font-size: 28px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 800;
+}
+
+.pkge_card_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.package_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Space between cards */
+}
+
+.package_card {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.country_title {
+    color: #5C626A;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.pkge_subtitle {
+    color: #5C626A;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.slider_package_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.pkge_card_title {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.package_item {
+    width: 300px;
+    height: 500px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 5px;
+    gap: 20px;
+}
+
+.image_container {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image scales correctly without distortion */
+}
+
+.submit_btn,
+.submit_btn:hover,
+.submit_btn:active,
+.submit_btn:focus,
+.submit_btn:focus-visible {
+    background: linear-gradient(90deg, #b49453, rgb(85, 83, 83));
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.button_group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.label_class {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.input_field::placeholder {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 800;
+}
+
+.All_btn_class,
+.All_btn_class:hover,
+.All_btn_class:active,
+.All_btn_class:focus,
+.All_btn_class:focus-visible {
+    /* background: linear-gradient(90deg, #bea166, rgb(197, 195, 195)); */
+    background-color: #e9bc4a;
+    border: none;
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.view_details_image {
+    text-decoration: none;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 800;
+    font-style: 20px;
+}

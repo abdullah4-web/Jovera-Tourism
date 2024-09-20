@@ -1,0 +1,83 @@
+.signup_text {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+}
+
+.signup_des {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+}
+
+.form_control_input {
+    display: flex;
+    width: 100%;
+    max-width: 448px;
+    height: 50px;
+    padding: 13px 20px 14px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 3px 0px 0px 3px;
+    background: #FFF;
+}
+
+.form_control_input::placeholder {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input_fields_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.travel_image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Subscribe_btn {
+    display: flex;
+    width: 100%;
+    max-width: 145px;
+    padding: 13px 27px;
+    justify-content: center;
+    align-items: center;
+    gap: 9.606px;
+    border-radius: 0px 3px 3px 0px;
+    background: #E4A70A;
+    border: none;
+    color: white;
+}
+
+.custom_support_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+@media(max-width:800px) {
+    .Subscribe_btn {
+        margin-top: 4%;
+    }
+}

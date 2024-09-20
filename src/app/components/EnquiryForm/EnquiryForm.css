@@ -1,0 +1,69 @@
+.accordian_main_container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 12px;
+}
+
+.div_container {
+    width: 100%;
+    max-width: 656px;
+    border-radius: 7px;
+    background: #FFF;
+    margin-top: 7%;
+}
+
+.title_call {
+    color: #000;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.call_conatiner {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.p_tag_inquiry {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.accordian_header {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #000;
+}
+
+.form_label {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+}
+
+.input_field::placeholder {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+.submit_apply_handler,
+.submit_apply_handler:hover,
+.submit_apply_handler:active,
+.submit_apply_handler:focus-visible,
+.submit_apply_handler:visited {
+    border-radius: 11px;
+    background: #E4A70A;
+    border: none;
+}

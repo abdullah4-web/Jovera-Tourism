@@ -1,0 +1,178 @@
+.about_us_main_container {
+    background-image: url('../../Assets/homepageassets/aboutmain.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+}
+
+.aboutusimages {
+    width: 100%;
+    height: auto;
+}
+
+.timetoexplore {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.touring_world {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.exploreNow_btn {
+    display: flex;
+    padding: 12px 21px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    background-color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+
+.jovera_about_p_tag {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.numbercount_title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10%;
+}
+
+.numbercount {
+    color: #E4A70A;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.reviewtitle {
+    color: #E4A70A !important;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.about_company_container {
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.company_detail_container {
+    padding: 7% 20px;
+}
+
+.about_company_text {
+    color: #232323;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.founded_text {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.54px;
+    text-align: justify;
+}
+
+.missionvision {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+.founded_text_container {
+    width: 100%;
+    max-width: 335px;
+    margin: 0 auto;
+}
+
+.founded_text_container_two {
+    width: 100%;
+    max-width: 335px;
+}
+
+@media(max-width:768px) {
+    .touring_world {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .timetoexplore {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .joveratourismtext {
+        padding: 5px 15px;
+    }
+
+    .exploreNow_btn_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_company_container {
+        padding: 5px 15px;
+    }
+
+    .founded_text_container_two {
+        width: 100%;
+        max-width: 335px;
+        margin: 0 auto;
+    }
+
+
+    .about_company_text {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:450px) {
+    .touring_world {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .about_company_text {
+        font-size: 24px;
+    }
+}

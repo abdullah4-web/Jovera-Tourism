@@ -1,0 +1,101 @@
+/* TrendingPackages.css */
+
+/* Container for the cards */
+.card_class_travel_guide {
+    height: 100%;
+    max-height: 900px;
+    transition: transform 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-top: 2%;
+}
+.hot_deals_container{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.tranding_container {
+    display: flex;
+    border-radius: 12px;
+    background: #E4A70A;
+    gap: 5px;
+    width: 100%;
+    max-width: 350px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.trending_deals {
+    color: #000;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+/* Image container */
+.image_container {
+    flex: 2;
+    /* Adjust the flex to ensure it takes up more space */
+    overflow: hidden;
+}
+
+/* Image styling */
+.card_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the container */
+}
+
+/* Card body container */
+.card-body {
+    flex: 1;
+    /* Allow the body to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trending_title {
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.pkge_card_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pkge_subtitle {
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+
+@media(max-width:768px) {
+
+    .trending_deals {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:450px) {
+
+    .trending_deals {
+        font-size: 22px;
+    }
+}

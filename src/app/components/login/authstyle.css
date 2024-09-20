@@ -1,0 +1,217 @@
+.login_container_main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../../Assets/homepageassets/bglogin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.forgotpassword_text {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.forgot_password_btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.forgot_label {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.forgot_title {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.input_field_forgot,
+.input_field_forgot::placeholder {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-weight: 800;
+    height: 52px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+
+
+.card_conatiner_auth {
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.login_form_text {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.text_field,
+.text_field:visited,
+.text_field:focus-visible,
+.text_field:active,
+.text_field:hover {
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    width: 364px;
+    height: 52px;
+}
+
+.text_field:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a subtle shadow on focus */
+}
+
+.login_div_container {
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 4%;
+}
+
+.form_login_main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.register_account {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.sign_up_text {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.input_container_field {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+}
+
+.Login_btn,
+.Login_btn:visited,
+.Login_btn:focus-visible,
+.Login_btn:active,
+.Login_btn:hover {
+    border-radius: 16px;
+    background: #E4A70A;
+    box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+    border: none;
+    padding: 10px 30px;
+}
+
+.card_container_forgotpassword {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+
+
+.forgot_password_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.otp_verification_main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.otp-field {
+    width: 70px;
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+}
+
+.forgot_title_register {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 1%;
+}
+
+.register_form {
+    padding: 30px 10px;
+}
+
+.register_image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

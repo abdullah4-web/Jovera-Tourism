@@ -1,0 +1,201 @@
+.corporate_container {
+    background-image: url('../../Assets/homepageassets/corporate_bg.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+}
+
+.corporateImages_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 3%;
+}
+
+.corporateImage_div {
+    width: 100%;
+    max-width: 450px;
+    overflow: hidden;
+}
+
+.image_corporate {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.corporateImage_div:hover .image_corporate {
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Shadow for depth */
+}
+
+/* .about_link {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+    text-decoration: none;
+} */
+
+.enjoytraveltext {
+    color: #E4A70A !important;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.simplyfytext {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.tourism_text {
+    color: #E4A70A !important;
+    font-family: "Yesteryear", sans-serif;
+    font-weight: 400;
+}
+
+.corporate_cards {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.SimplifyingJovera_tourism_container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.corporate_p_tag {
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 2%;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.service_title {
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 2%;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.corporate_servies_text {
+    font-size: 24px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.service_container {
+    padding: 0px 40px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Corporatetravel_image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.destination_card {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.corporate_servies_text_container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.top_destination_text {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.planetext {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* font-family: "Yesteryear", sans-serif; */
+
+
+
+@media(max-width:768px) {
+    .simplyfytext {
+        font-size: 30px;
+    }
+
+    .corporate_p_tag {
+        padding: 0px 20px !important;
+    }
+
+    .Corporatetravel_image {
+        display: none;
+    }
+
+    .destinationtxt_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .destination_card {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media(max-width:450px) {
+
+    .simplyfytext {
+        font-size: 20px;
+    }
+
+    .corporate_p_tag {
+        padding: 0px 20px !important;
+    }
+}

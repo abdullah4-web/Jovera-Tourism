@@ -1,0 +1,60 @@
+.inspiration_card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+}
+.insportion_trip_col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card_images {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+    filter: brightness(0.9);
+    /* Remove the filter by default */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    /* Hide the text initially */
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.inspiration_card:hover .card_images {
+    transform: scale(1.05);
+    /* Zoom in the image on hover */
+}
+
+.inspiration_card:hover .overlay {
+    opacity: 1;
+    /* Show the overlay text on hover */
+}
+
+.inspiration_card:hover .title,
+.inspiration_card:hover .subtitle {
+    color: white;
+}

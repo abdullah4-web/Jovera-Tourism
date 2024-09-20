@@ -1,0 +1,121 @@
+.chooseexperience {
+    color: #000;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 8%;
+}
+
+.topdestination {
+    color: #000;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+
+.images_destination {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.destination_text,
+.destination_text_tour {
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: 18px;
+    z-index: 2;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.images_destination:hover .destination_text,
+.images_destination:hover .destination_text_tour {
+    bottom: 55%;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.destination_text_tour {
+    bottom: 10px;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+.images_destination:hover .destination_text_tour {
+    bottom: 40%;
+}
+
+.images_destination:hover .destination_text_tour {
+    bottom: 44%;
+    transform: translate(-50%, 100%);
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.images_destination:hover .overlay {
+    opacity: 1;
+}
+
+.topdestination_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destination_image {
+    width: 100%;
+}
+
+.destintioncall {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+@media(max-width:768px) {
+    .topdestination {
+        font-size: 24px;
+        margin-top: 1%;
+    }
+}
+
+@media(max-width:450px) {
+    .topdestination {
+        font-size: 18px;
+        margin-top: 1%;
+    }
+}

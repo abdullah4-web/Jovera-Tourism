@@ -1,0 +1,125 @@
+.contact_us_container {
+    background-image: url('../../Assets/homepageassets/conatctbg.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+}
+
+.about_link {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+    text-decoration: none;
+}
+
+.contcat_h1_tag {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.email_us_text {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 5%;
+}
+
+.drop_email {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+.all_contact_text{
+    font-weight: bold;
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+}
+
+.Submit_btn {
+    display: flex;
+    padding: 12px 21px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #9097A0;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.joveramap_image {
+    width: 70%;
+    height: 50%;
+    margin-bottom: 4%;
+}
+
+@media(max-width:768px) {
+
+    .contcat_h1_tag {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .email_us_text {
+        font-size: 24px;
+        margin-top: 3%;
+    }
+
+    .Start_btn_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .joveramap_image {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 4%;
+    }
+}
+
+@media(max-width:450px) {
+    .contcat_h1_tag {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .email_us_text {
+        font-size: 24px;
+        margin-top: 2%;
+    }
+
+    .joveramap_image {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 4%;
+    }
+
+    /* .content_container {
+        height: 55vh;
+    } */
+}
