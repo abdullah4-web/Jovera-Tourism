@@ -12,15 +12,23 @@ const Page = () => {
     const [loading, setLoading] = useState(false);
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
-    
-    // LocalStorage Email
-    const email = localStorage.getItem('forgotemail');
+    const [email, setEmail] = useState('');
 
     // Refs for each input field
     const field1Ref = useRef(null);
     const field2Ref = useRef(null);
     const field3Ref = useRef(null);
     const field4Ref = useRef(null);
+
+    // Load email from localStorage on client-side
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const storedEmail = localStorage.getItem('forgotemail');
+            if (storedEmail) {
+                setEmail(storedEmail);
+            }
+        }
+    }, []);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -63,7 +71,9 @@ const Page = () => {
                 email: email,
             });
             setSuccessMessage(response.data.message);
-            localStorage.setItem('resetToken', response.data.resetToken);
+            if (typeof window !== 'undefined') {
+                localStorage.setItem('resetToken', response.data.resetToken);
+            }
         } catch (error) {
             setErrorMessage(error.response?.data?.message || 'An error occurred');
         } finally {
@@ -107,7 +117,7 @@ const Page = () => {
                                                 value={otp.field1}
                                                 onChange={handleChange}
                                                 maxLength="1"
-                                                className="otp-field "
+                                                className="otp-field"
                                                 ref={field1Ref}
                                                 required
                                             />
