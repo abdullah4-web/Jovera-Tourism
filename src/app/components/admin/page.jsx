@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import React, { useState, useEffect } from 'react';
 import HomeNavbar from '../homeNavbar/HomeNavbar';
 import { Button, Container, Row, Col, Card } from 'react-bootstrap';
@@ -20,10 +20,17 @@ const Page = () => {
     const [totalFlights, setTotalFlights] = useState(0);
     const [totalHotels, setTotalHotels] = useState(0);
     const [totalVisas, setTotalVisas] = useState(0);
-    const authToken = useSelector(state => state.userLogin.user.token);
+
+    // Safely accessing the token with a fallback
+    const authToken = useSelector(state => state.userLogin?.user?.token) || '';
 
     useEffect(() => {
         const fetchData = async () => {
+            if (!authToken) {
+                console.error('Auth token is missing');
+                return;
+            }
+
             try {
                 const headers = {
                     'Authorization': `Bearer ${authToken}`,
