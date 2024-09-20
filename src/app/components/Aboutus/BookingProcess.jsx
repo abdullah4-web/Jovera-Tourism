@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client'
 import React, { useState, useEffect } from 'react'
 import './BookingStyle.css'
@@ -8,16 +7,6 @@ import Image from 'next/image'
 import travelagent from '../../Assets/homepageassets/travelagent.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
-=======
-'use client';
-import React from 'react';
-import './BookingStyle.css';
-import { Container, Row, Col } from 'react-bootstrap';
-import bookingicon from '../../Assets/homepageassets/bookingicon.png';
-import Image from 'next/image';
-import travelagent from '../../Assets/homepageassets/travelagent.png';
-
->>>>>>> 8685518de33a8a3862bc81d05adbe7fe0b3eae7c
 const BookingProcess = () => {
     useEffect(() => {
         AOS.init({
@@ -61,8 +50,7 @@ const BookingProcess = () => {
             title: 'Pesonalized Trips',
             des: 'Our local travel experts will design a trip that matches your unique interests and special requirements, booking everything.',
         },
-    ];
-
+    ]
     const travelAgentData = [
         {
             id: 0,
@@ -88,30 +76,19 @@ const BookingProcess = () => {
             name: 'Arlene McCoy',
             profession: 'Marketing'
         },
-    ];
-
+    ]
     return (
-        <div className='booking_main_container'>
+        <div className='booking_main_container' >
             <Container>
-<<<<<<< HEAD
                 <p className='bookwithus' data-aos="fade-up">why book with us</p>
                 <h1 className='booking_process' data-aos="fade-up">Convenient and Easy Tour Booking Process</h1>
-=======
-                <p className='bookwithus'>why book with us</p>
-                <h1 className='booking_process'>Convenient and Easy Tour Booking Process</h1>
->>>>>>> 8685518de33a8a3862bc81d05adbe7fe0b3eae7c
                 <Row>
-                    {bookingProcess.map((bookPlan) => (
-                        <Col xs={12} sm={6} md={6} lg={4} key={bookPlan.id}>
+                    {bookingProcess.map((bookPlan, index) => (
+                        <Col xs={12} sm={6} md={6} lg={4} key={index}>
                             <div className="booking-item">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }} className='mt-5'>
-<<<<<<< HEAD
                                     <Image src={bookPlan.imageIcon} alt='image' fluid data-aos="fade-up"/>
                                     <p className='titlebookplan mb-0' data-aos="fade-up">{bookPlan.title}</p>
-=======
-                                    <Image src={bookPlan.imageIcon} alt='image' fluid />
-                                    <p className='titlebookplan mb-0'>{bookPlan.title}</p>
->>>>>>> 8685518de33a8a3862bc81d05adbe7fe0b3eae7c
                                 </div>
                                 <p className='titlebookdes'data-aos="fade-up">{bookPlan.des}</p>
                             </div>
@@ -121,7 +98,6 @@ const BookingProcess = () => {
 
                 {/* Travel Agent */}
 
-<<<<<<< HEAD
                 <div className='booking_agent_container' >
                     <p className='bookwithus' data-aos="fade-up">Meet The Team</p>
                     <h1 className='booking_process' data-aos="fade-up">Our Best Travel Agents</h1>
@@ -141,26 +117,10 @@ const BookingProcess = () => {
                             )
                         })
                     }
-=======
-                <div className='booking_agent_container'>
-                    <p className='bookwithus'>Meet The Team</p>
-                    <h1 className='booking_process'>Our Best Travel Agents</h1>
-                </div>
-                <Row>
-                    {travelAgentData.map((agent) => (
-                        <Col xs={12} sm={12} md={6} lg={3} key={agent.id} className='travel_agent_conatiner'>
-                            <div>
-                                <Image src={agent.travelagent} alt='travelagent' className='agent_image' />
-                                <p className='agent_name'>{agent.name}</p>
-                                <p className='agent_profession'>{agent.profession}</p>
-                            </div>
-                        </Col>
-                    ))}
->>>>>>> 8685518de33a8a3862bc81d05adbe7fe0b3eae7c
                 </Row>
             </Container>
         </div>
-    );
-};
+    )
+}
 
-export default BookingProcess;
+export default BookingProcess
