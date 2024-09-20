@@ -13,6 +13,7 @@ import exploreicon from '../../Assets/homepageassets/exploreicon.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import CountUp from 'react-countup';  // Import CountUp
+import Link from 'next/link'
 
 const PerfectPlaces = () => {
     const [startCount, setStartCount] = useState(false);
@@ -110,9 +111,9 @@ const PerfectPlaces = () => {
                             </div>
 
                             <div className='exploreNow_btn_container' data-aos="fade-up">
-                                <button className='exploreNow_btn mt-4'>
+                                <Link href={'/components/packages'} className='exploreNow_btn mt-4' style={{textDecoration:'none', color:'black' }} >
                                     Explore Now <Image src={exploreicon} alt='exploreicon' />
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </Col>

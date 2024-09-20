@@ -50,7 +50,7 @@ const TravellingTours = () => {
 
     return (
         <Container>
-            <Row>
+            <Row className='mt-4' >
                 <Col xs={12} sm={12} md={6}>
                     <Image src={aboutusimage} alt='aboutusimage' className='aboutusimages' data-aos="fade-up" />
                 </Col>
@@ -67,7 +67,7 @@ const TravellingTours = () => {
                             </p>
 
                             <p className='jovera_about_p_tag' data-aos="fade-up">
-                                Today, booking the right tour or holiday package has become a time-consuming and painful process. Which tour operator is qualified? What’s the right tour price? When you pay an upfront deposit to an unknown tour operator, is your money safe? Are the reviews seen on a local operator's website genuine?
+                                Today, booking the right tour or holiday package has become a time-consuming and painful process. Which tour operator is qualified? What&apos;s the right tour price? When you pay an upfront deposit to an unknown tour operator, is your money safe? Are the reviews seen on a local operator&apos;s website genuine?
                             </p>
                         </div>
 

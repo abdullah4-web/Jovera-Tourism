@@ -5,6 +5,7 @@ import './BookingStyle.css'
 import exploreicon from '../../Assets/homepageassets/exploreicon.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import Link from 'next/link'
 const Excitingworld = () => {
     useEffect(() => {
         AOS.init({
@@ -19,7 +20,7 @@ const Excitingworld = () => {
                     We live in an exciting world
                 </h1>
                 <div className='Start_btn_container' data-aos="fade-up">
-                    <button className='StartNow_btn'>Start Exploring It <Image src={exploreicon} alt='exploreicon' /></button>
+                    <Link href={"/components/packages"} style={{textDecoration:'none'}} className='StartNow_btn'>Start Exploring It <Image src={exploreicon} alt='exploreicon' /></Link>
                 </div>
             </div>
         </div>

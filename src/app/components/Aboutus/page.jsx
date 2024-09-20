@@ -32,6 +32,7 @@ const Page = () => {
             <Link href={''} className='about_link' data-aos="fade-up">/ About</Link>
           </div>
         </div>
+      </div>
         <TravellingTours />
         <AboutCompany />
         <BookingProcess />
@@ -39,7 +40,6 @@ const Page = () => {
         <Excitingworld />
         <CustomSupport />
         <Footer />
-      </div>
     </>
   )
 }

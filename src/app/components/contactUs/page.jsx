@@ -80,6 +80,7 @@ const ContactPage = () => {
     }, []);
 
     return (
+        <>
         <div className='contact_us_container'>
             <HomeNavbar />
             <div className='content_container'>
@@ -89,8 +90,9 @@ const ContactPage = () => {
                     <Link href={''} className='about_link' data-aos="fade-up">/ Contact</Link>
                 </div>
             </div>
+            </div>
             <Container>
-                <h1 className='contcat_h1_tag' data-aos="fade-up">
+                <h1 className='contcat_h1_tag mt-4' data-aos="fade-up">
                     Need to contact us? Use one of the options below. Our team is always happy to help.
                 </h1>
                 <Row>
@@ -196,7 +198,7 @@ const ContactPage = () => {
                 </Row>
             </Container>
             <Footer />
-        </div>
+            </>
     );
 };
 

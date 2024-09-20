@@ -52,6 +52,7 @@ const Page = () => {
     };
 
     return (
+        <>
         <div className='flight_container'>
             <HomeNavbar />
             <div className='content_container'>
@@ -60,6 +61,7 @@ const Page = () => {
                     <Link href={'/'} className='about_link'>Home</Link>
                     <Link href={''} className='about_link'> / Packages</Link>
                 </div>
+            </div>
             </div>
 
             <div className='packages_container mb-5'>
@@ -196,7 +198,7 @@ const Page = () => {
                 </Container>
             </div>
             <Footer />
-        </div>
+            </>
     );
 };
 

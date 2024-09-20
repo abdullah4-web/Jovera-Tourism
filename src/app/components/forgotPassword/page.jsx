@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { Button, Form, Container, Row, Col, Card } from 'react-bootstrap'
 import axios from 'axios'
 import Link from 'next/link'
-import forgotpassword from '../../Assets/homepageassets/forgotpassword.PNG'
+import forgotpassword from '../../Assets/homepageassets/forgotpassword.png'
 import Image from 'next/image'
 import '../login/authstyle.css'
 import { IoChevronBack } from "react-icons/io5";

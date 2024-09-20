@@ -1,7 +1,7 @@
 .about_us_main_container {
     background-image: url('../../Assets/homepageassets/aboutmain.png');
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 75vh;
 }
 
 .content_container {
@@ -128,8 +128,22 @@
     width: 100%;
     max-width: 335px;
 }
+@media(max-width:1100px) and (min-width:900px) {
+    .about_us_main_container {
+        height: 50vh;
+    }
+}
 
+@media (min-width: 768px) and (max-width: 899px) {
+    .about_us_main_container {
+        height: 50vh !important;
+    }
+}
 @media(max-width:768px) {
+
+    .about_us_main_container {
+        height: 60vh;
+    }
     .touring_world {
         text-align: center;
         font-size: 30px;

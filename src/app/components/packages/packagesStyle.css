@@ -1,7 +1,7 @@
 .flight_container {
     background-image: url('../../Assets/homepageassets/flightbg.png');
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 75vh;
 }
 
 .slider_package_container {
@@ -184,9 +184,29 @@
 }
 
 
+@media(max-width:1100px) and (min-width:900px) {
+    .flight_container {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1050px) {
+    .flight_container {
+        height: 45vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+    .flight_container {
+        height: 50vh !important;
+    }
+}
 
 
 @media(max-width:768px) {
+    .flight_container {
+        height: 50vh;
+    }
     .popular_visa_text {
         font-size: 30px;
     }

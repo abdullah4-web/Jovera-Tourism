@@ -8,6 +8,7 @@ import bg_twoimge from '../../Assets/homepageassets/bg_twoimge.png'
 import bg_threeimge from '../../Assets/homepageassets/bg_threeimge.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import Link from 'next/link'
 const Bookingprocess = () => {
     useEffect(() => {
         AOS.init({
@@ -31,7 +32,7 @@ const Bookingprocess = () => {
                     </div>
 
                     <div className='exploreNow_btn_container'>
-                        <button data-aos="fade-up" style={{ backgroundColor: 'transparent', color: 'white', border: '1px solid white' }} className='exploreNow_btn   mt-4' >Explore Now <Image src={exploreicon} alt='exploreicon' /></button>
+                        <Link href={'/components/contactUs'} data-aos="fade-up" style={{ backgroundColor: 'transparent', color: 'white', border: '1px solid white', textDecoration:'none' }} className='exploreNow_btn   mt-4' >Explore Now <Image src={exploreicon} alt='exploreicon' /></Link>
                     </div>
                 </div>
 
@@ -43,7 +44,7 @@ const Bookingprocess = () => {
                     </div>
 
                     <div className='exploreNow_btn_container' data-aos="fade-up">
-                        <button style={{ backgroundColor: 'transparent', color: 'white', border: '1px solid white' }} className='exploreNow_btn   mt-4' >Explore Now <Image src={exploreicon} alt='exploreicon' /></button>
+                    <Link href={'/components/contactUs'} data-aos="fade-up" style={{ backgroundColor: 'transparent', color: 'white', border: '1px solid white', textDecoration:'none' }} className='exploreNow_btn   mt-4' >Explore Now <Image src={exploreicon} alt='exploreicon' /></Link>
                     </div>
                 </div>
 
@@ -55,7 +56,7 @@ const Bookingprocess = () => {
                     </div>
 
                     <div className='exploreNow_btn_container' data-aos="fade-up">
-                        <button style={{ backgroundColor: 'transparent', color: 'white', border: '1px solid white' }} className='exploreNow_btn   mt-4' >Explore Now <Image src={exploreicon} alt='exploreicon' /></button>
+                    <Link href={'/components/contactUs'} data-aos="fade-up" style={{ backgroundColor: 'transparent', color: 'white', border: '1px solid white', textDecoration:'none' }} className='exploreNow_btn   mt-4' >Explore Now <Image src={exploreicon} alt='exploreicon' /></Link>
                     </div>
                 </div>
 

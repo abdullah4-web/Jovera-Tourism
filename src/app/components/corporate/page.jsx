@@ -164,19 +164,21 @@ const Page = () => {
         },
     ]
     return (
-        <div className='corporate_container' >
-            <HomeNavbar />
-            <div className='content_container'>
-                <h1 className='about_text' data-aos="fade-up">Corporate</h1>
+        <>
+            <div className='corporate_container' >
+                <HomeNavbar />
+                <div className='content_container'>
+                    <h1 className='about_text' data-aos="fade-up">Corporate</h1>
 
-                <div style={{ display: 'flex', gap: '10px' }}>
-                    <Link href={'/'} className='about_link' data-aos="fade-up">Home</Link>
-                    <Link href={''} className='about_link' data-aos="fade-up">/ Corporate Assistance</Link>
+                    <div style={{ display: 'flex', gap: '10px' }}>
+                        <Link href={'/'} className='about_link' data-aos="fade-up">Home</Link>
+                        <Link href={''} className='about_link' data-aos="fade-up">/ Corporate Assistance</Link>
+                    </div>
                 </div>
             </div>
 
             <div className='SimplifyingJovera_tourism_container' >
-                <h4 className='enjoytraveltext' data-aos="fade-up">Enjoy Your Travel</h4>
+                <h4 className='enjoytraveltext mt-4' data-aos="fade-up">Enjoy Your Travel</h4>
                 <h1 className='simplyfytext' data-aos="fade-up">Simplifying Your Journey with <span className='tourism_text' >Jovera Tourism</span> </h1>
                 <p className='corporate_p_tag' data-aos="fade-up">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, architecto corrupti nihil obcaecati aliquam blanditiis omnis saepe vitae delectus, rerum explicabo, unde optio! Veniam minus perferendis, reprehenderit iste exercitationem quibusdam?
@@ -250,7 +252,7 @@ const Page = () => {
                 </Row>
             </Container>
             <Footer />
-        </div>
+        </>
     )
 }
 
