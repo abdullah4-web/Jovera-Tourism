@@ -4,7 +4,7 @@ import { Button, Form, Alert, Container, Row, Col, Card } from 'react-bootstrap'
 import axios from 'axios';
 import '../login/authstyle.css'
 import Image from 'next/image';
-import forgotpassword from '../../Assets/homepageassets/forgotpassword.PNG'
+import forgotpassword from '../../Assets/homepageassets/forgotpassword.png'
 const Page = () => {
     const [newPassword, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
