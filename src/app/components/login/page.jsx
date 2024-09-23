@@ -60,24 +60,23 @@ const Page = () => {
 
     return (
         <>
-               <HomeNavbar />
-        <div className='login_container_main'>
-            <Container>
-                <Form onSubmit={handleSubmit}>
-                    <Card className='card_container_forgotpassword'>
-                        <Card.Body>
-                            <div className='login_div_container'>
-                                <Row className='login_row_container'>
-                                    <Col xs={12} className='d-flex justify-content-center'>
-                                        <Image src={joveralogin} alt='joveralogin' width={240} height={65} />
-                                    </Col>
+            <HomeNavbar />
+            <div className='login_container_main'>
+                <Container>
+                    <Form onSubmit={handleSubmit}>
+                        <Card className='card_container_forgotpassword'>
+                            <Card.Body>
+                                <div className='login_div_container'>
+                                    <Row className='login_row_container'>
+                                        <Col xs={12} className='d-flex justify-content-center'>
+                                            <Image src={joveralogin} alt='joveralogin' width={240} height={65} />
+                                        </Col>
 
-                                    <Col xs={12} className='d-flex justify-content-center'>
-                                        <h5 className='login_form_text'>Login</h5>
-                                    </Col>
+                                        <Col xs={12} className='d-flex justify-content-center'>
+                                            <h5 className='login_form_text'>Login</h5>
+                                        </Col>
 
-                                    <Col xs={12}>
-                                        <div className='input_container_field mt-3'>
+                                        <Col xs={12} md={12}>
                                             <Form.Group className='mb-3' controlId='formBasicEmail'>
                                                 <Form.Label className='forgot_label'>Email address</Form.Label>
                                                 <Form.Control
@@ -93,11 +92,9 @@ const Page = () => {
                                                     {errors.email}
                                                 </Form.Control.Feedback>
                                             </Form.Group>
-                                        </div>
-                                    </Col>
+                                        </Col>
 
-                                    <Col xs={12}>
-                                        <div className='input_container_field'>
+                                        <Col xs={12} md={12}>
                                             <Form.Group className='mb-3' controlId='formBasicPassword'>
                                                 <Form.Label className='forgot_label'>Password</Form.Label>
                                                 <Form.Control
@@ -113,7 +110,6 @@ const Page = () => {
                                                     {errors.password}
                                                 </Form.Control.Feedback>
                                             </Form.Group>
-                                            {/* Display login error message */}
                                             {loginError && (
                                                 <Col xs={12}>
                                                     <div className='text-danger mb-2 text-center'>{loginError}</div>
@@ -125,32 +121,31 @@ const Page = () => {
                                                     Forgot Password
                                                 </Link>
                                             </div>
+                                        </Col>
+
+
+                                        <Col xs={12}>
+                                            <div className='input_container_field'>
+                                                <button type='submit' className='forgot_password_button'>
+                                                    Login
+                                                </button>
+                                            </div>
+                                        </Col>
+
+                                        <div className='mt-2 register_container'>
+                                            <p className='mb-0 register_account'>Don’t have an account?</p>
+                                            <Link href='/components/register' className='sign_up_text'>
+                                                Sign Up
+                                            </Link>
                                         </div>
-                                    </Col>
-
-
-                                    <Col xs={12}>
-                                        <div className='input_container_field'>
-                                            <button type='submit' className='forgot_password_button'>
-                                                Login
-                                            </button>
-                                        </div>
-                                    </Col>
-
-                                    <div className='mt-2 register_container'>
-                                        <p className='mb-0 register_account'>Don’t have an account?</p>
-                                        <Link href='/components/register' className='sign_up_text'>
-                                            Sign Up
-                                        </Link>
-                                    </div>
-                                </Row>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                </Form>
-            </Container>
-        </div>
-        </> );
+                                    </Row>
+                                </div>
+                            </Card.Body>
+                        </Card>
+                    </Form>
+                </Container>
+            </div>
+        </>);
 };
 
 export default Page;

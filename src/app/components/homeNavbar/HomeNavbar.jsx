@@ -9,7 +9,6 @@ import Link from 'next/link';
 import navlogo from '../../Assets/homeNavbarAssets/navlogo.png';
 import Nav from 'react-bootstrap/Nav';
 import { logout } from '../../Redux/loginSlice';
-import { Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 
 const Sidenav = () => {
@@ -56,8 +55,8 @@ const Sidenav = () => {
                                 </>
                             ) : (
                                 <>
-                                <Link href="/components/login" className='linkStyleNav'>Login</Link>
-                                <Link href="/components/register" className='linkStyleNav'>Register</Link>
+                                    <Link href="/components/login" className='linkStyleNav'>Login</Link>
+                                    <Link href="/components/register" className='linkStyleNav'>Register</Link>
                                 </>
                             )}
                         </Nav>
@@ -84,8 +83,8 @@ const Sidenav = () => {
                                     </>
                                 ) : (
                                     <>
-                                    <Link href="/components/login" className='linkStyleNav'>Login</Link>
-                                    <Link href="/components/register" className='linkStyleNav'>Register</Link>
+                                        <Link href="/components/login" className='linkStyleNav'>Login</Link>
+                                        <Link href="/components/register" className='linkStyleNav'>Register</Link>
                                     </>
                                 )}
                             </div>

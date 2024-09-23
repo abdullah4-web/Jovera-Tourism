@@ -1,5 +1,7 @@
-'use client'
+'use client';
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation'; // For Next.js 13 and above
+import { useSelector } from 'react-redux';
 import HomeNavbar from '../homeNavbar/HomeNavbar';
 import { Button, Container, Row, Col, Card } from 'react-bootstrap';
 import FlightForm from './FlightForm';
@@ -11,26 +13,44 @@ import Footer from '../footer/Footer';
 import Blogs from './Blogs';
 import AdminBlogs from './AdminBlogs';
 import AllPackages from './AllPackages';
-import { useSelector } from 'react-redux';
 import RegisterUser from './RegisterUser';
 
 const Page = () => {
+    const router = useRouter();
     const [activeForm, setActiveForm] = useState(null);
     const [totalPackages, setTotalPackages] = useState(0);
     const [totalFlights, setTotalFlights] = useState(0);
     const [totalHotels, setTotalHotels] = useState(0);
     const [totalVisas, setTotalVisas] = useState(0);
+    const [isAuthorized, setIsAuthorized] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
-    // Safely accessing the token with a fallback
+    // Safely accessing the token and role with fallbacks
     const authToken = useSelector(state => state.userLogin?.user?.token) || '';
+    const userRole = useSelector(state => state.userLogin?.user?.role) || '';
 
     useEffect(() => {
-        const fetchData = async () => {
-            if (!authToken) {
-                console.error('Auth token is missing');
-                return;
-            }
+        // Check user role for authorization
+        if (!authToken) {
+            console.error('Auth token is missing');
+            router.push('/components/login');
+            return;
+        }
 
+        if (userRole !== 'admin' && userRole !== 'superadmin') {
+            console.error('User is not authorized');
+            router.push('/components/login');
+            return;
+        }
+
+        setIsAuthorized(true);
+        setIsLoading(false);
+    }, [authToken, userRole, router]);
+
+    useEffect(() => {
+        if (!isAuthorized) return;
+
+        const fetchData = async () => {
             try {
                 const headers = {
                     'Authorization': `Bearer ${authToken}`,
@@ -39,21 +59,25 @@ const Page = () => {
 
                 // Fetch packages
                 const packagesResponse = await fetch('https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/package/get-all-packages', { headers });
+                if (!packagesResponse.ok) throw new Error('Failed to fetch packages');
                 const packagesData = await packagesResponse.json();
                 setTotalPackages(packagesData.length);
 
                 // Fetch flights
                 const flightsResponse = await fetch('https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/flights/get-all-flights', { headers });
+                if (!flightsResponse.ok) throw new Error('Failed to fetch flights');
                 const flightsData = await flightsResponse.json();
                 setTotalFlights(flightsData.length);
 
                 // Fetch hotels
                 const hotelsResponse = await fetch('https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/hotels/get-all-hotels', { headers });
+                if (!hotelsResponse.ok) throw new Error('Failed to fetch hotels');
                 const hotelsData = await hotelsResponse.json();
                 setTotalHotels(hotelsData.length);
 
                 // Fetch visas
                 const visasResponse = await fetch('https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/visa/get-all-visa', { headers });
+                if (!visasResponse.ok) throw new Error('Failed to fetch visas');
                 const visasData = await visasResponse.json();
                 setTotalVisas(visasData.length);
             } catch (error) {
@@ -62,7 +86,7 @@ const Page = () => {
         };
 
         fetchData();
-    }, [authToken]); // Add authToken as a dependency
+    }, [authToken, isAuthorized]);
 
     const renderForm = () => {
         switch (activeForm) {
@@ -86,6 +110,14 @@ const Page = () => {
                 return null;
         }
     };
+
+    if (isLoading) {
+        return (
+            <Container className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+                <div>Loading...</div>
+            </Container>
+        );
+    }
 
     return (
         <>
