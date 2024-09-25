@@ -69,11 +69,12 @@
 
 .card_description {
     color: #000;
+    text-align: justify;
     font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
     line-height: 22px;
+    margin-top: 1%;
 }
 
 /* From Uiverse.io by cssbuttons-io */
@@ -81,7 +82,7 @@
     font-size: 14px;
     padding: 8px 15px;
     font-weight: 500;
-    background: linear-gradient(45deg, #e0af60, rgb(43, 42, 42));
+    background: #e4a70a;
     color: white;
     border: none;
     position: relative;
@@ -98,9 +99,7 @@
     top: 0;
     border-radius: 0.6em;
     margin-top: -0.25em;
-    background-image: linear-gradient(rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0.3));
+    background: #e4a70a;
 }
 
 .label {
@@ -111,7 +110,7 @@
 .transition {
     transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
     transition-duration: 500ms;
-    background: linear-gradient(45deg, #e6cba1, rgb(0, 0, 0));
+    background: #e4a70a;
     border-radius: 9999px;
     width: 0;
     height: 0;
@@ -124,6 +123,7 @@
 .read_more_btn:hover .transition {
     width: 14em;
     height: 14em;
+    background: #e4a70a;
 }
 
 .read_more_btn:active {

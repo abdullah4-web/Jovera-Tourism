@@ -161,7 +161,6 @@ const AdminBlogs = () => {
             <h5 className='topdestination' data-aos="fade-up">Latest Travel Guides</h5>
             <div className="mt-4 mb-5">
                 {getBlog.length === 1 || getBlog.length === 2 ? (
-                    // When there's 1 or 2 blogs, display them in a responsive grid without a slider
                     <Row>
                         {getBlog.map((item) => (
                             <Col key={item._id} md={getBlog.length === 1 ? 12 : 6} className="mb-4">
@@ -169,15 +168,15 @@ const AdminBlogs = () => {
                                     <Image src={item?.image || '/navlogo'} alt={item.title} width={300} height={150} className='card_image' />
                                     <Card.Body>
                                         <div className='subtitle_deleteicon d-flex justify-content-between align-items-center'>
-                                            <Card.Subtitle className="mb-2" style={{ color: '#E4A70A' }}>{item.title}</Card.Subtitle>
+                                            <Card.Subtitle className="mb-2" style={{ color: '#E4A70A' }}>{truncateText(item.title, 50)}</Card.Subtitle>
                                             <div style={{ display: 'flex', gap: '10px' }} >
                                                 <RiDeleteBinLine
                                                     style={{ fontSize: '20px', color: 'red', cursor: 'pointer' }}
                                                     onClick={() => handleBlogDelete(item._id)}
                                                 />
-                                                <CiEdit 
-                                                    style={{ fontSize: '20px', color: 'green', cursor: 'pointer' }} 
-                                                    onClick={() => handleShow(item)} 
+                                                <CiEdit
+                                                    style={{ fontSize: '20px', color: 'green', cursor: 'pointer' }}
+                                                    onClick={() => handleShow(item)}
                                                 />
                                             </div>
                                         </div>
@@ -214,9 +213,9 @@ const AdminBlogs = () => {
                                                             style={{ fontSize: '20px', color: 'red', cursor: 'pointer' }}
                                                             onClick={() => handleBlogDelete(item._id)}
                                                         />
-                                                        <CiEdit 
-                                                            style={{ fontSize: '20px', color: 'green', cursor: 'pointer' }} 
-                                                            onClick={() => handleShow(item)} 
+                                                        <CiEdit
+                                                            style={{ fontSize: '20px', color: 'green', cursor: 'pointer' }}
+                                                            onClick={() => handleShow(item)}
                                                         />
                                                     </div>
                                                 </div>

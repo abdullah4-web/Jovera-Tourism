@@ -2,15 +2,17 @@
 import React, { useState, useEffect } from 'react';
 import HomeNavbar from "../homeNavbar/HomeNavbar";
 import './ContactUsStyle.css';
-import Link from 'next/link';
 import { Col, Container, Row, Form } from 'react-bootstrap';
 import Footer from '../footer/Footer';
 import exploreicon from '../../Assets/homepageassets/exploreicon.png';
-import Image from 'next/image';
-import joveramap from '../../Assets/homepageassets/joveramap.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import axios from 'axios';
+import Link from 'next/link';
+import Image from 'next/image';
+import { FaFacebook, FaLinkedin, FaTiktok } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+import { TbBrandYoutube } from "react-icons/tb";
 
 const ContactPage = () => {
     const [formData, setFormData] = useState({
@@ -79,17 +81,40 @@ const ContactPage = () => {
         });
     }, []);
 
+    const socialMedia = [
+        {
+            id: 0,
+            icon: <FaFacebook />,
+            url: 'https://www.facebook.com/jovera.tourism'
+        },
+        {
+            id: 1,
+            icon: <FaTiktok />,
+            url: 'https://www.facebook.com/jovera.tourism'
+        },
+        {
+            id: 2,
+            icon: <BsInstagram />,
+            url: 'https://www.instagram.com/jovera_tourism'
+        },
+        {
+            id: 3,
+            icon: <TbBrandYoutube />,
+            url: 'https://www.facebook.com/jovera.tourism'
+        },
+    ];
+
     return (
         <>
-        <div className='contact_us_container'>
-            <HomeNavbar />
-            <div className='content_container'>
-                <h1 className='about_text' data-aos="fade-up">Contact</h1>
-                <div style={{ display: 'flex', gap: '10px' }}>
-                    <Link href={'/'} className='about_link' data-aos="fade-up">Home</Link>
-                    <Link href={''} className='about_link' data-aos="fade-up">/ Contact</Link>
+            <div className='contact_us_container'>
+                <HomeNavbar />
+                <div className='content_container'>
+                    <h1 className='about_text' data-aos="fade-up">Contact</h1>
+                    <div style={{ display: 'flex', gap: '10px' }}>
+                        <Link href={'/'} className='about_link' data-aos="fade-up">Home</Link>
+                        <span className='about_link'>/ Contact</span>
+                    </div>
                 </div>
-            </div>
             </div>
             <Container>
                 <h1 className='contcat_h1_tag mt-4' data-aos="fade-up">
@@ -183,22 +208,37 @@ const ContactPage = () => {
                     </Col>
                     <Col xs={12} sm={12} md={6} lg={6}>
                         <h2 className='email_us_text' data-aos="fade-up">Trip Queries</h2>
-                        <p className='mb-0 all_contact_text' data-aos="fade-up">Helpline</p>
+                        <p className='mb-0 all_contact_text mt-3' data-aos="fade-up">Helpline</p>
                         <h5 style={{ color: '#E4A70A' }} data-aos="fade-up">800-664000</h5>
-                        <p className='mb-0 all_contact_text' data-aos="fade-up">Contactable hours</p>
+                        <p className='mb-0 all_contact_text mt-3' data-aos="fade-up">Contactable hours</p>
                         <h5 data-aos="fade-up">Mon-Sat 24 hours</h5>
-                        <p className='mb-0 all_contact_text' data-aos="fade-up">Require Information About a Trip</p>
-                        <h5 data-aos="fade-up">info@jovera.ae</h5>
+                        <p className='mb-0 all_contact_text mt-3' data-aos="fade-up">Require Information About a Trip</p>
+                        <h5 data-aos="fade-up">info@joveratourism.ae</h5>
+
+                        <div className='social_links_container mb-3 mt-3'>
+                            {socialMedia.map((social) => (
+                                <Link key={social.id} href={social.url} target='_blank' data-aos="fade-up" style={{ color: 'black' }} className='social_links'>
+                                    {social.icon}
+                                </Link>
+                            ))}
+                        </div>
                         <div>
-                            <Link href={'https://maps.app.goo.gl/Pry1rF1sxQvJ4SCt8'} target="_blank" data-aos="fade-up">
-                                <Image src={joveramap} alt='joveramap' className='joveramap_image' />
-                            </Link>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.947111273687!2d54.3922058!3d24.4526202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e6862939edac9%3A0x4df84efcc80cb629!2sAl%20Jazira%20Club!5e0!3m2!1sen!2sae!4v1727183124450!5m2!1sen!2sae"
+                                width="100%"
+                                height="450"
+                                style={{ border: 0 }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                data-aos="fade-up"
+                            />
                         </div>
                     </Col>
                 </Row>
             </Container>
             <Footer />
-            </>
+        </>
     );
 };
 

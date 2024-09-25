@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { Container, Card, Row, Col, Alert } from 'react-bootstrap';
+import { Container, Card, Row, Col, Alert,Spinner  } from 'react-bootstrap';
 import axios from 'axios';
 import trendingicon from '../../Assets/homepageassets/trending.png';
 import Image from 'next/image';
@@ -9,6 +9,8 @@ import './TrendingPackages.css';
 import Link from 'next/link';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import Loader from '../loader/Loader';
+
 
 const TrendingPackages = () => {
     const token = useSelector((state) => state.userLogin.user?.token);
@@ -80,10 +82,8 @@ const TrendingPackages = () => {
                         <Col xs={12} className='text-center mt-3'>
 
                             <div className='hot_deals_container' >
-
-                                <Alert variant="success">
-                                    <h5>No Hot Deals Available</h5>
-                                </Alert>
+                            <Loader/>
+                            {/* <Spinner animation="grow"variant="dark" /> */}
                             </div>
                         </Col>
                     )}

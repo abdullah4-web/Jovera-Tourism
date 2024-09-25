@@ -4,6 +4,7 @@ import './HomeHeaderSection.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ReactPlayer from 'react-player';
+import Link from 'next/link';
 
 const HomeHeaderSection = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -55,7 +56,7 @@ const HomeHeaderSection = () => {
                         <h1 className='heroText'>
                             {headSectionText[currentIndex].title}
                         </h1>
-                        <button className='exploreButton'>Explore Now</button>
+                        <Link href={'/components/contactUs'} style={{textDecoration:'none'}} className='exploreButton'>Contact Us</Link>
                     </div>
                 </div>
             </div>

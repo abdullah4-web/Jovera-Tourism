@@ -100,7 +100,7 @@ const TravelGuides = () => {
                                 <Card className='card_class_travel_guide' data-aos="fade-up">
                                     <Image src={item?.image || '/navlogo'} alt={item.title} width={300} height={150} className='card_image' />
                                     <Card.Body>
-                                        <Card.Subtitle className="mb-2" style={{ color: '#E4A70A' }}>{item.title}</Card.Subtitle>
+                                        <Card.Subtitle className="mb-2" style={{ color: '#E4A70A' }}>{truncateText(item.title, 50)}</Card.Subtitle>
                                         <Card.Text className='card_description' data-aos="fade-up">
                                             {truncateText(item.content, 100)}
                                         </Card.Text>
@@ -129,7 +129,7 @@ const TravelGuides = () => {
                                         <Card className='card_class_travel_guide' data-aos="fade-up">
                                             <Image src={item?.image || '/navlogo'} alt={item.title} width={300} height={150} className='card_image' />
                                             <Card.Body>
-                                                <Card.Subtitle className="mb-2" style={{ color: '#E4A70A' }}>{item.title}</Card.Subtitle>
+                                                <Card.Subtitle className="mb-2" style={{ color: '#E4A70A' }}>{truncateText(item.title, 50)}</Card.Subtitle>
                                                 <Card.Text className='card_description' data-aos="fade-up">
                                                     {truncateText(item.content, 100)}
                                                 </Card.Text>

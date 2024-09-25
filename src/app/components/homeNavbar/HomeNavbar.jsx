@@ -18,11 +18,11 @@ const Sidenav = () => {
     const dispatch = useDispatch();
 
     const openNav = () => {
-        setSidenavWidth(250);
+        setSidenavWidth(250); // Set the width to 250px when opening
     };
 
     const closeNav = () => {
-        setSidenavWidth(0);
+        setSidenavWidth(0); // Set the width back to 0 when closing
     };
 
     const logoutHandler = () => {
@@ -49,14 +49,11 @@ const Sidenav = () => {
                                 <Link href="/components/admin" className='linkStyleNav'>Admin</Link>
                             )}
                             {checkAuth ? (
-                                <>
-                                    <Link href={'/components/login'} className='logout_btn linkStyleNav' onClick={logoutHandler} style={{ cursor: 'pointer' }}>Logout</Link>
-
-                                </>
+                                <Link href={'/components/login'} className='logout_btn linkStyleNav' onClick={logoutHandler} style={{ cursor: 'pointer' }}>Logout</Link>
                             ) : (
                                 <>
                                     <Link href="/components/login" className='linkStyleNav'>Login</Link>
-                                    <Link href="/components/register" className='linkStyleNav'>Register</Link>
+                                    {/* <Link href="/components/register" className='linkStyleNav'>Register</Link> */}
                                 </>
                             )}
                         </Nav>
@@ -64,9 +61,7 @@ const Sidenav = () => {
 
                     <div className='side_bar_container'>
                         <div id="mySidenav" className="sidenav" style={{ width: sidenavWidth }}>
-                            <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
-                                &times;
-                            </a>
+                            <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
                             <div className='link_tag_sidebar'>
                                 <Link href="/" className='linkStyleNav'>Home</Link>
                                 <Link href="/components/Aboutus" className='linkStyleNav'>About us</Link>
@@ -77,14 +72,11 @@ const Sidenav = () => {
                                     <Link href="/components/admin" className='linkStyleNav'>Admin</Link>
                                 )}
                                 {checkAuth ? (
-                                    <>
-                                        <Link href={'/components/login'} className='logout_btn' onClick={logoutHandler} style={{ cursor: 'pointer' }}>Logout</Link>
-
-                                    </>
+                                    <Link href={'/components/login'} className='logout_btn' onClick={logoutHandler} style={{ cursor: 'pointer' }}>Logout</Link>
                                 ) : (
                                     <>
                                         <Link href="/components/login" className='linkStyleNav'>Login</Link>
-                                        <Link href="/components/register" className='linkStyleNav'>Register</Link>
+                                        {/* <Link href="/components/register" className='linkStyleNav'>Register</Link> */}
                                     </>
                                 )}
                             </div>

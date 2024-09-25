@@ -78,6 +78,30 @@
     margin-bottom: 4%;
 }
 
+.social_links_container {
+    display: flex;
+    gap: 15px;
+}
+
+.social_links {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px dashed #000;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    perspective: 1000px;
+}
+
+.social_links:hover {
+    transform: rotateX(20deg) rotateY(20deg) scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
 @media (min-width: 900px) and (max-width: 1050px) {
     .contact_us_container {
         height: 45vh;

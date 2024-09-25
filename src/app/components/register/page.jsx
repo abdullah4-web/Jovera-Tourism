@@ -94,13 +94,13 @@ const Page = () => {
             <div className='register_container_main'>
                 <Container>
                     <Row>
-                        {success && <Alert variant='success'>{success}</Alert>}
                         <Form onSubmit={handleSubmit}>
                             <Card className='register_form'>
+                                {success && <Alert variant='success'>{success}</Alert>}
 
                                 <div className='register_image_container' >
-                                <Image src={registerImage} alt='registerImage' width={150} height={150} />
-                            </div>
+                                    <Image src={registerImage} alt='registerImage' width={150} height={150} />
+                                </div>
                                 <h2 className='text-center 
                                  mt-5'>Register Yourself With Us</h2>
                                 <Card.Body>
@@ -210,9 +210,15 @@ const Page = () => {
                                             </Form.Group>
                                         </Col>
                                     </Row>
-                                    <button className='forgot_password_button' type="submit" disabled={loading}>
-                                        {loading ? 'Submitting...' : 'Register'}
-                                    </button>
+
+                                    <Row>
+                                        <Col xs={12} md={4}>
+
+                                            <button className='forgot_password_button' type="submit" disabled={loading}>
+                                                {loading ? 'Submitting...' : 'Register'}
+                                            </button>
+                                        </Col>
+                                    </Row>
                                 </Card.Body>
                             </Card>
                         </Form>

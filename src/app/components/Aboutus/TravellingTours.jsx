@@ -25,25 +25,25 @@ const TravellingTours = () => {
         {
             id: 0,
             icons: icon,
-            numbercount: 16284,
+            numbercount: 10000,
             title: 'Tours and holidays',
         },
         {
             id: 1,
             icons: iconone,
-            numbercount: 12456,
+            numbercount: 10000,
             title: 'Happy Customers',
         },
         {
             id: 2,
             icons: icontwo,
-            numbercount: 7890,
+            numbercount: 10000,
             title: 'Destinations',
         },
         {
             id: 3,
             icons: iconthree,
-            numbercount: 2567,
+            numbercount: 10000,
             title: 'Tour Packages',
         },
     ];

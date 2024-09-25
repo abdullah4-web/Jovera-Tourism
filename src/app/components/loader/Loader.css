@@ -1,0 +1,37 @@
+.loader {
+    width: 50px;  /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.plane-icon {
+    font-size: 30px; /* Adjust icon size as needed */
+    position: absolute; /* Position the plane absolutely */
+    animation: rotate 3s linear infinite; /* Animation for flying effect */
+}
+
+/* Animation for rotating the loader */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation for the plane flying */
+@keyframes fly {
+    0%, 100% {
+        transform: translateY(0); /* Start and end position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up */
+    }
+}

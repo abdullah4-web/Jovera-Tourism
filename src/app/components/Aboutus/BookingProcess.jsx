@@ -7,6 +7,9 @@ import Image from 'next/image'
 import travelagent from '../../Assets/homepageassets/travelagent.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import agentone from '../../Assets/homepageassets/agentone.png'
+import ceoImage from '../../Assets/homepageassets/ceoImage.png'
+import mdimage from '../../Assets/homepageassets/mdimage.png'
 
 const BookingProcess = () => {
     useEffect(() => {
@@ -57,27 +60,29 @@ const BookingProcess = () => {
     const travelAgentData = [
         {
             id: 0,
-            travelagent: travelagent,
-            name: 'Arlene McCoy',
-            profession: 'Marketing'
+            travelagent: agentone,
+            name: 'Eng. Ramy',
+            profession: 'CEO'
+
         },
         {
             id: 1,
-            travelagent: travelagent,
-            name: 'Arlene McCoy',
-            profession: 'Marketing'
+            travelagent: agentone,
+            name: 'Md Fady',
+            profession: 'Managing Director'
+
         },
         {
             id: 2,
-            travelagent: travelagent,
-            name: 'Arlene McCoy',
-            profession: 'Marketing'
+            travelagent: agentone,
+            name: 'Muhammad Kamal',
+            profession: 'IT Manager'
         },
         {
             id: 3,
-            travelagent: travelagent,
-            name: 'Arlene McCoy',
-            profession: 'Marketing'
+            travelagent: agentone,
+            name: 'Hossam Mohammad',
+            profession: 'Travel and Tourism Manager'
         },
     ];
 
@@ -91,7 +96,7 @@ const BookingProcess = () => {
                         <Col xs={12} sm={6} md={6} lg={4} key={bookPlan.id}>
                             <div className="booking-item">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }} className='mt-5'>
-                                    <Image src={bookPlan.imageIcon} alt='image' fluid data-aos="fade-up"/>
+                                    <Image src={bookPlan.imageIcon} alt='image' fluid data-aos="fade-up" />
                                     <p className='titlebookplan mb-0' data-aos="fade-up">{bookPlan.title}</p>
                                 </div>
                                 <p className='titlebookdes' data-aos="fade-up">{bookPlan.des}</p>
@@ -108,8 +113,8 @@ const BookingProcess = () => {
                 <Row>
                     {travelAgentData.map((agent, index) => (
                         <Col xs={12} sm={12} md={6} lg={3} className='travel_agent_conatiner' key={agent.id}>
-                            <div>
-                                <Image src={agent.travelagent} alt='travelagent' className='agent_image' data-aos="fade-up"/>
+                            <div className='mt-4' >
+                                <Image src={agent.travelagent} alt='travelagent' className='agent_image' data-aos="fade-up" />
                                 <p className='agent_name' data-aos="fade-up"> {agent.name} </p>
                                 <p className='agent_profession' data-aos="fade-up"> {agent.profession} </p>
                             </div>

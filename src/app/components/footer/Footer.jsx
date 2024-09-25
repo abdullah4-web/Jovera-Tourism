@@ -5,8 +5,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Link from 'next/link';
 import Image from 'next/image';
 import navlogo from '../../Assets/homeNavbarAssets/navlogo.png';
-import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaTiktok } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
+import { TbBrandYoutube } from "react-icons/tb";
 
 const Footer = () => {
 
@@ -21,19 +22,23 @@ const Footer = () => {
     const socialMedia = [
         {
             id: 0,
-            icon: <FaFacebook />
+            icon: <FaFacebook />,
+            url: 'https://www.facebook.com/jovera.tourism'
         },
         {
             id: 1,
-            icon: <FaTwitter />
+            icon: <FaTiktok />,
+            url: 'https://www.facebook.com/jovera.tourism'
         },
         {
             id: 2,
-            icon: <BsInstagram />
+            icon: <BsInstagram />,
+            url: 'https://www.instagram.com/jovera_tourism'
         },
         {
             id: 3,
-            icon: <FaLinkedin />
+            icon: <TbBrandYoutube />,
+            url: 'https://www.facebook.com/jovera.tourism'
         },
     ];
 
@@ -43,17 +48,17 @@ const Footer = () => {
                 <Row>
                     <Col xs={12} md={6} lg={6} className='first_column'>
                         <div className='footer_text' >
-                            <Link className='linktag_footer' href=''>About Us</Link>
-                            <Link className='linktag_footer' href=''>Contact Us</Link>
-                            <Link className='linktag_footer' href=''>Travel Guides</Link>
-                            <Link className='linktag_footer' href=''>Data Policy</Link>
+                            <Link className='linktag_footer' href='/components/Aboutus'>About Us</Link>
+                            <Link className='linktag_footer' href='/components/contactUs'>Contact Us</Link>
+                            <Link className='linktag_footer' href='/components/packages'>Travel Guides</Link>
+                            <Link className='linktag_footer' href='/components/corporate'>Data Policy</Link>
                         </div>
 
                         <div className='footer_text'>
-                            <Link className='linktag_footer' href=''>Visa</Link>
-                            <Link className='linktag_footer' href=''>Flights</Link>
-                            <Link className='linktag_footer' href=''>Corporate</Link>
-                            <Link className='linktag_footer' href=''>Packages</Link>
+                            <Link className='linktag_footer' href='/components/packages'>Visa</Link>
+                            <Link className='linktag_footer' href='/components/packages'>Flights</Link>
+                            <Link className='linktag_footer' href='/components/corporate'>Corporate</Link>
+                            <Link className='linktag_footer' href='/components/packages'>Packages</Link>
                         </div>
                     </Col>
 
@@ -66,7 +71,7 @@ const Footer = () => {
                                 Al Jazira Club - floor No. 8 - Tower A Al Muroor St - Al Nahyan - Zone 1 - Abu Dhabi
                             </Link>
                             <h5 className='jovera_number mt-2'>800-664000</h5>
-                            <p className='jovera_email mt-2'>info@jovera.ae</p>
+                            <p className='jovera_email mt-2'>info@joveratourism.ae</p>
                         </div>
                     </Col>
                 </Row>
@@ -85,11 +90,11 @@ const Footer = () => {
                         <Link href='' className='termsandconditions' >Privacy Policy</Link>
                     </div>
 
-                    <div className='social_links_container' >
+                    <div className='social_links_container'>
                         {socialMedia.map((social) => (
-                            <div key={social.id} className='social_links'>
+                            <Link key={social.id} href={social.url} target='_blank' style={{ color: 'white' }} className='social_links'>
                                 {social.icon}
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>

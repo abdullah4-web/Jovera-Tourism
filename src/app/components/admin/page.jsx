@@ -14,6 +14,12 @@ import Blogs from './Blogs';
 import AdminBlogs from './AdminBlogs';
 import AllPackages from './AllPackages';
 import RegisterUser from './RegisterUser';
+import Allusers from './Allusers';
+import EditFlights from './EditFlights';
+import EditVisa from './EditVisa';
+import EditHotels from './EditHotels';
+import ContactDetails from './ContactDetails';
+import LeadData from './LeadData';
 
 const Page = () => {
     const router = useRouter();
@@ -90,6 +96,8 @@ const Page = () => {
 
     const renderForm = () => {
         switch (activeForm) {
+            case 'allusers':
+                return <Allusers />;
             case 'flights':
                 return <FlightForm />;
             case 'visa':
@@ -106,6 +114,16 @@ const Page = () => {
                 return <AllPackages />;
             case 'registeruser':
                 return <RegisterUser />;
+            case 'editflights':
+                return <EditFlights />;
+            case 'editvisa':
+                return <EditVisa />;
+            case 'edithotels':
+                return <EditHotels />;
+            case 'contactdetails':
+                return <ContactDetails />;
+            case 'leaddetails':
+                return <LeadData />;
             default:
                 return null;
         }
@@ -126,39 +144,46 @@ const Page = () => {
                     <Col xs={12} sm={12} md={12} lg={2} className="sidebar">
                         <div className="sidebar-buttons">
                             <Button
+                                onClick={() => setActiveForm('allusers')}
+                                className='All_btn_class'
+                                active={activeForm === 'allusers'}
+                            >
+                                All Users
+                            </Button>
+                            <Button
                                 onClick={() => setActiveForm('package')}
                                 className='All_btn_class'
                                 active={activeForm === 'package'}
                             >
-                                Package
+                                Create Package
                             </Button>
                             <Button
                                 onClick={() => setActiveForm('flights')}
                                 className='All_btn_class'
                                 active={activeForm === 'flights'}
                             >
-                                Flights
+                                Create Flights
                             </Button>
                             <Button
                                 onClick={() => setActiveForm('visa')}
                                 className='All_btn_class'
                                 active={activeForm === 'visa'}
                             >
-                                Visa
+                                Create Visa
                             </Button>
                             <Button
                                 onClick={() => setActiveForm('hotels')}
                                 className='All_btn_class'
                                 active={activeForm === 'hotels'}
                             >
-                                Hotels
+                                Create  Hotels
                             </Button>
                             <Button
                                 onClick={() => setActiveForm('blogs')}
                                 className='All_btn_class'
                                 active={activeForm === 'blogs'}
                             >
-                                Blogs
+                                Create Blogs
                             </Button>
                             <Button
                                 onClick={() => setActiveForm('adminBlogs')}
@@ -172,8 +197,50 @@ const Page = () => {
                                 className='All_btn_class'
                                 active={activeForm === 'allpackages'}
                             >
-                                All Packages
+                                Edit Packages
                             </Button>
+
+
+                            <Button
+                                onClick={() => setActiveForm('editflights')}
+                                className='All_btn_class'
+                                active={activeForm === 'editflights'}
+                            >
+                                Edit Flights
+                            </Button>
+
+                            <Button
+                                onClick={() => setActiveForm('editvisa')}
+                                className='All_btn_class'
+                                active={activeForm === 'editvisa'}
+                            >
+                                Edit Visa
+                            </Button>
+
+                            <Button
+                                onClick={() => setActiveForm('edithotels')}
+                                className='All_btn_class'
+                                active={activeForm === 'edithotels'}
+                            >
+                                Edit Hotels
+                            </Button>
+
+                            <Button
+                                onClick={() => setActiveForm('contactdetails')}
+                                className='All_btn_class'
+                                active={activeForm === 'contactdetails'}
+                            >
+                                Contact Details
+                            </Button>
+
+                            <Button
+                                onClick={() => setActiveForm('leaddetails')}
+                                className='All_btn_class'
+                                active={activeForm === 'leaddetails'}
+                            >
+                                Lead Details
+                            </Button>
+
                             <Button
                                 onClick={() => setActiveForm('registeruser')}
                                 className='All_btn_class'
