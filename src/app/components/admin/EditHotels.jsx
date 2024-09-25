@@ -18,7 +18,7 @@ const EditHotels = () => {
     // Get All Hotels
     const getAllHotels = async () => {
         try {
-            const response = await axios.get(`http://192.168.2.137:4040/api/hotels/get-all-hotels`, {
+            const response = await axios.get(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/hotels/get-all-hotels`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setAllHotels(response.data);
@@ -54,7 +54,7 @@ const EditHotels = () => {
     const hotelDeleteHandler = async (id) => {
         if (window.confirm("Are you sure you want to delete this Hotel?")) {
             try {
-                await axios.put(`http://192.168.2.137:4040/api/hotels/delete-hotel/${id}`, {}, {
+                await axios.put(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/hotels/delete-hotel/${id}`, {}, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
                 setAllHotels(allHotels.filter(hotel => hotel._id !== id));
@@ -68,7 +68,7 @@ const EditHotels = () => {
     // Hotel Edit Handler
     const hotelEditHandler = async () => {
         try {
-            await axios.put(`http://192.168.2.137:4040/api/hotels/update-hotel/${currentHotel.id}`, {
+            await axios.put(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/hotels/update-hotel/${currentHotel.id}`, {
                 name: currentHotel.name,
                 stars: currentHotel.stars,
             }, {

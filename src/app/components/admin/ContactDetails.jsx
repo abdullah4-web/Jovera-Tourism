@@ -13,7 +13,7 @@ const ContactDetails = () => {
 
     const getContactDetails = async () => {
         try {
-            const response = await axios.get(`http://192.168.2.137:4040/api/contact/get-all-massages`, {
+            const response = await axios.get(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/contact/get-all-massages`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setGetContactData(response.data); // Assuming response.data contains the flights

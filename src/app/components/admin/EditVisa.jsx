@@ -20,7 +20,7 @@ const EditVisa = () => {
         setLoading(true);
         setError(null);
         try {
-            const response = await axios.get(`http://192.168.2.137:4040/api/visa/get-all-visa`, {
+            const response = await axios.get(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/visa/get-all-visa`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setVisas(response.data);
@@ -41,7 +41,7 @@ const EditVisa = () => {
     // Visa Delete Handler
     const visadeleteHandler = async (id) => {
         try {
-            await axios.put(`http://192.168.2.137:4040/api/visa/delete-visa/${id}`, {}, {
+            await axios.put(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/visa/delete-visa/${id}`, {}, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setVisas(visa.filter(v => v._id !== id));
@@ -66,7 +66,7 @@ const EditVisa = () => {
     const visaEditHandler = async (e) => {
         e.preventDefault();
         try {
-            await axios.put(`http://192.168.2.137:4040/api/visa/update-visa/${currentVisaId}`, editVisa, {
+            await axios.put(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/visa/update-visa/${currentVisaId}`, editVisa, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             fetchVisa();

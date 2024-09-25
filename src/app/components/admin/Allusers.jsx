@@ -29,7 +29,7 @@ const Allusers = () => {
 
     const getAllUsers = async () => {
         try {
-            const { data } = await axios.get(`http://192.168.2.137:4040/api/users/allusers`, {
+            const { data } = await axios.get(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/users/allusers`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setAllUsers(data);
@@ -65,7 +65,7 @@ const Allusers = () => {
     const userDeleteHandler = async () => {
         setDeleteError(null);
         try {
-            await axios.put(`http://192.168.2.137:4040/api/users/delete/${selectedUserId}`, { DelStatus: true }, {
+            await axios.put(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/users/delete/${selectedUserId}`, { DelStatus: true }, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             // Update the state after deletion
@@ -97,7 +97,7 @@ const Allusers = () => {
     const saveEditHandler = async () => {
         setEditError(null);
         try {
-            await axios.put(`http://192.168.2.137:4040/api/users/edit-user/${selectedUserId}`,
+            await axios.put(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/users/edit-user/${selectedUserId}`,
                 {
                     name: editForm.name,
                     email: editForm.email,
@@ -131,7 +131,7 @@ const Allusers = () => {
     const userResetPassword = async () => {
         setResetError(null);
         try {
-            await axios.put(`http://192.168.2.137:4040/api/users/edit-pass/${selectedUserId}`, {
+            await axios.put(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/users/edit-pass/${selectedUserId}`, {
                 newPassword: newPassword
             }, {
                 headers: { Authorization: `Bearer ${token}` }

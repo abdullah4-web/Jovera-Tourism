@@ -87,7 +87,7 @@ const AllPackages = () => {
 
         try {
             await axios.put(
-                `/api/package/update-package/${updatedPackage.id}`,
+                `https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/package/update-package/${updatedPackage.id}`,
                 formData,
                 {
                     headers: {

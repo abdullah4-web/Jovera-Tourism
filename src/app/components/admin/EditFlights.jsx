@@ -19,7 +19,7 @@ const EditFlights = () => {
         setLoading(true);
         setError(null);
         try {
-            const response = await axios.get(`http://192.168.2.137:4040/api/flights/get-all-flights`, {
+            const response = await axios.get(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/flights/get-all-flights`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setFlights(response.data);
@@ -40,7 +40,7 @@ const EditFlights = () => {
     const flightdeleteHandler = async (id) => {
         if (window.confirm("Are you sure you want to delete this flight?")) {
             try {
-                await axios.put(`http://192.168.2.137:4040/api/flights/delete-flight/${id}`, {}, {
+                await axios.put(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/flights/delete-flight/${id}`, {}, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
                 setFlights(flights.filter(flight => flight._id !== id));
@@ -54,7 +54,7 @@ const EditFlights = () => {
 
     const flightEditHandler = async () => {
         try {
-            await axios.put(`http://192.168.2.137:4040/api/flights/update-flight/${currentFlight._id}`, {
+            await axios.put(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/flights/update-flight/${currentFlight._id}`, {
                 from: currentFlight.from,
                 to: currentFlight.to,
                 trip: currentFlight.trip,

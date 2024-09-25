@@ -13,7 +13,7 @@ const LeadData = () => {
 
     const fetchLead = async () => {
         try {
-            const fetchEnquiryData = await axios.get(`http://192.168.2.137:4040/api/applyonline/applications`, {
+            const fetchEnquiryData = await axios.get(`https://joveratoursimbackend-git-main-abdullah-shahs-projects-3915135f.vercel.app/api/applyonline/applications`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setGetLeads(fetchEnquiryData.data); // Set the lead data
